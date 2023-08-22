@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Todo List</title>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;1,200;1,300&display=swap" rel="stylesheet">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="todo-app">
+            <h1><i class="fa-solid fa-clipboard-list"></i> Todo List</h1>
+            <div class="row">
+                <i class="fa-solid fa-list-check"></i>
+                <input type="text" class="add-task" id="add" placeholder="Add your task">
+                <button id="btn" class="btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="mid">
+                <i class="fa-solid fa-check-double"></i>
+                <p id="complete-all">Complete all tasks </p>
+                <p id="clear-all">Clear completed</p>
+            </div>
+
+            <ul class="list" id="list">
+               
+              <!-- <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+              <label for="task1">Buy groceries</label>
+              <img src="bin.svg" class="delete" data-id="12" /> -->
+     
+            </ul>
+
+            <!-- dropdown throgh which we can apply filters -->
+            <div class="filters">
+                <div class="dropdown">
+                    <button class="dropbtn">Filter</button>
+                    <div class="dropdown-content">
+                        <a href="#" id="all">All</a>
+                        <a href="#" id="rem">Uncomplete</a>
+                        <a href="#" id="com">Completed</a>
+                    </div>
+                </div>
+
+                <!-- value showing completed task and all -->
+                <div class="completed-task">
+                    <p>Completed: <span id="c-count">0</span></p>
+                </div>
+                <div class="remaining-task">
+                    <p> <span id="total-tasks">Total Tasks: <span id="tasks-counter">0</span></span> </p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- link for external css -->
+        <script src="script.js"></script>
+</body>
+
+</html>
